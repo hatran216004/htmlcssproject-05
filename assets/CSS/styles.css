@@ -81,6 +81,13 @@ a {
 }
 
 .section__heading {
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 5rem;
+}
+
+.section__desc {
     color: #696d76;
     margin-top: 20px;
     font-size: 1.8rem;
@@ -88,14 +95,11 @@ a {
     line-height: 3rem;
 }
 
-.section__desc {
-}
-
 /* ================ Header ================ */
 .fixed {
     position: sticky;
     top: -34px;
-    z-index: 1;
+    z-index: 99;
 }
 
 .header {
@@ -171,7 +175,8 @@ a {
 
 /* ================ Hero ================ */
 .hero {
-    margin-top: 68px;
+    margin-top: 38px;
+    padding: 30px 0;
 }
 
 .hero__inner {
@@ -181,6 +186,10 @@ a {
 }
 
 /* Hero content */
+.hero-content {
+    max-width: 540px;
+}
+
 .hero-content__heading {
     color: #212832;
     font-size: 6rem;
@@ -487,4 +496,139 @@ a {
 .hero-interest__desc {
     font-size: 1.6rem;
     font-weight: 400;
+}
+
+/* ================ Work ================ */
+.work {
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.work__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    column-gap: 230px;
+}
+
+.work-media {
+    padding-right: 7px;
+    position: relative;
+    height: 619px;
+}
+
+.work-media::after {
+    content: url(../img/work-img-bg.svg);
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.work-media__img {
+    margin-top: -2.5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.work-media__wrap-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 76px;
+    right: 55px;
+    z-index: 1;
+}
+
+.work-media__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background: #f8fbfe;
+}
+
+.work-card {
+    display: flex;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    padding: 15px;
+    width: 226px;
+    height: 70px;
+    border-radius: 8px;
+    background: #fffdfa;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    bottom: 96px;
+    right: -100px;
+    z-index: 1;
+}
+
+.work-card__wrap-icon {
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+    background: #4ab5e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-card__icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-card__title {
+    color: #212832;
+    font-family: inherit;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.work-card__desc {
+    margin-top: 5px;
+    color: #696d76;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.work__content--list {
+    margin-top: 70px;
+}
+
+.work__content--item {
+    margin-top: 30px;
+}
+
+.work-item__title {
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 3.2rem;
+}
+
+.work-item__desc {
+    margin-top: 16px;
+    color: #696d76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
 }
