@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --primary-color: #7264d6;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    --height: 58px;
+    min-width: 149px;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 8px;
+    background: #212832;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    transition: opacity 0.25s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+/* ================ Header ================ */
+.header {
+    padding: 42px 0;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+    margin-right: 70px;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.header__action {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar__link {
+    padding: 0 24px;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem; /* 175% */
+}
+
+.navbar-item:nth-child(1) .navbar__link {
+    padding: 0;
+}
+
+.navbar__link--active {
+    color: #212832;
+    font-size: 1.6rem;
+    text-shadow: 1px 0 0 currentColor;
+    line-height: 2.8rem; /* 175% */
+}
+
+.navbar__link--active::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--primary-color);
+    border-radius: 999px;
+}
+
+.header__action--login {
+    padding: 0 28px;
+    color: #212832;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+}
+
+.header__action--login:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.header__action--btn {
+    --height: 52px;
+    min-width: 113px;
+}
