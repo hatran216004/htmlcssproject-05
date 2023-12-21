@@ -40,19 +40,19 @@ a {
 
 .btn {
     border: none;
-    background-color: transparent;
     outline: none;
+    padding: 0;
+    background-color: transparent;
     --height: 58px;
     min-width: 149px;
-    height: var(--height);
-    line-height: var(--height);
     border-radius: 8px;
     background: #212832;
     color: #fff;
+    height: var(--height);
+    line-height: var(--height);
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
-    line-height: 2.8rem;
     transition: opacity 0.25s;
 }
 
@@ -631,4 +631,219 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 2.8rem;
+}
+
+/* ================ Card ================ */
+.card {
+    margin-top: 100px;
+    padding: 30px 0;
+}
+
+.card__inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 130px;
+}
+
+.card-content__list {
+    margin: 28px 0 38px;
+}
+
+.card-content__item {
+    margin-top: 18px;
+}
+
+.card-content__item--text {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.card-content__item--text::before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.card-media {
+    position: relative;
+    z-index: 1;
+    margin-right: 88px;
+    padding: 38px;
+    width: 482px;
+    height: 322px;
+    border-radius: 20px;
+    background: linear-gradient(76deg, #8174e0 11.52%, #7264d6 70.78%);
+}
+
+.card-media__title {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-media__price {
+    margin-top: 10px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-media__row {
+    margin-top: 98px;
+    display: grid;
+    grid-template-columns: 114px 1fr;
+    gap: 7px 26px;
+}
+
+.card-media__text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-media__date {
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-media__decor-top {
+    border-radius: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.card-media__decor-circle {
+    position: absolute;
+    top: 38px;
+    right: 38px;
+}
+
+.card-media__decor-bottom {
+    border-radius: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.card-media__top {
+    font-family: "Inter", sans-serif;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 14px;
+    align-items: center;
+    padding: 23px 13px;
+    width: 276px;
+    height: 86px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
+    position: absolute;
+    top: -48px;
+    right: -88px;
+}
+
+.card-media__top--icon {
+    margin-right: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(218, 100, 100, 0.1);
+    border-radius: 8px;
+}
+
+.card-media__top--content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+}
+
+.card-media__top--title {
+    color: #212832;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.card-media__top--price {
+    color: #212832;
+    text-align: right;
+    font-family: inherit;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-media__top--desc {
+    color: #696d76;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-media__top--date {
+    color: #696d76;
+    text-align: right;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-media__bottom {
+    padding: 15px;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+    background: #439f90;
+    position: absolute;
+    bottom: -55px;
+    right: -88px;
+}
+
+.card-media__bottom--icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-media__bottom--text {
+    display: inline-block;
+    margin-top: 14px;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-media__bottom--price {
+    margin-top: 6px;
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
 }
