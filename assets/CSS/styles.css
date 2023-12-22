@@ -940,3 +940,147 @@ a {
     right: 0;
     z-index: 1;
 }
+
+/* ================ Client ================ */
+.client {
+    padding: 80px 0;
+    margin-top: 80px;
+}
+
+.client__content--heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client__desc {
+    margin-top: 18px;
+    width: 435px;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.client__list {
+    margin-top: 70px;
+    display: flex;
+    column-gap: 30px;
+    overflow: hidden;
+}
+
+.client-item {
+    flex-shrink: 0;
+}
+
+.client-item__message {
+    border-radius: 8px;
+    width: 570px;
+    padding: 48px 28px;
+    border: 1px solid #dfe2e8;
+    background-color: #fff;
+    position: relative;
+    transition: filter 0.3s;
+}
+
+.client-item__message::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    rotate: 45deg;
+    left: 48%;
+    transform: translate(-50%, 0);
+    border: 1px solid #dfe2e8;
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 4px;
+    bottom: -52.2px;
+    transition: border-color 0.3s;
+}
+
+.client-item__message:hover {
+    border-color: transparent;
+    filter: drop-shadow(0px 22px 54px rgba(0, 0, 0, 0.07));
+}
+
+.client-item__message:hover::after {
+    border-color: transparent;
+}
+
+.client-item__quote {
+    color: #696d76;
+    text-align: center;
+    font-size: 2.2rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 3.4rem;
+    position: relative;
+    z-index: 1;
+    cursor: default;
+    user-select: none;
+}
+
+.client-item__info {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.client-item__thumb {
+    width: 104px;
+    height: 104px;
+    border-radius: 50%;
+    background-color: #4ab5e3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.client-item:nth-child(2) .client-item__thumb {
+    background-color: #439f90;
+}
+
+.client-item_author {
+    margin-top: 20px;
+    color: #070052;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+}
+
+.client-item__text {
+    margin-top: 2px;
+    color: #696d76;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.client__page--wrap {
+    margin: 38px auto 0;
+    width: 90px;
+    height: 6px;
+    display: flex;
+    column-gap: 12px;
+}
+
+.client__page {
+    width: 22px;
+    height: 100%;
+    border-radius: 1px;
+    background-color: #fff;
+    border: 1px solid #9b9fab;
+}
+
+.client__page--active {
+    border-color: transparent;
+    background-color: var(--primary-color);
+}
