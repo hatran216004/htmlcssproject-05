@@ -427,13 +427,13 @@
             <!-- Card -->
             <section class="card">
                 <div class="container">
-                    <section class="card__inner">
+                    <section class="card__row">
                         <section class="card-content">
                             <p class="section__title">Digital Smart Wallet</p>
-                            <h2 class="section__heading">
+                            <h2 class="section__heading card-content__heading">
                                 One Card For All Your Payments
                             </h2>
-                            <p class="section__desc">
+                            <p class="section__desc card-content__desc">
                                 We bring together eveything that’s required to
                                 build websites and apps that accept payments and
                                 send payouts globally. We are the best platform.
@@ -458,60 +458,159 @@
                             <button class="btn">Get Started</button>
                         </section>
                         <div class="card-media">
-                            <p class="card-media__title">Main Balance</p>
-                            <p class="card-media__price">$78,355.17</p>
-                            <div class="card-media__row">
-                                <p class="card-media__text">VALID THUR</p>
-                                <p class="card-media__date">Md Moshqur Alam</p>
-                                <p class="card-media__date">08/22</p>
-                                <p class="card-media__text">CARD HOLDER</p>
+                            <div class="card-media__wrap">
+                                <p class="card-media__title">Main Balance</p>
+                                <p class="card-media__price">$78,355.17</p>
+                                <div class="card-media__row">
+                                    <p class="card-media__text">VALID THUR</p>
+                                    <p class="card-media__date">
+                                        Md Moshqur Alam
+                                    </p>
+                                    <p class="card-media__date">08/22</p>
+                                    <p class="card-media__text">CARD HOLDER</p>
+                                </div>
+                                <img
+                                    src="./assets/icons/card-decorate-01.svg"
+                                    alt=""
+                                    class="card-media__decor-top"
+                                />
+                                <img
+                                    src="./assets/icons/card-decorate-02.svg"
+                                    alt=""
+                                    class="card-media__decor-circle"
+                                />
+                                <img
+                                    src="./assets/icons/card-decorate-03.svg"
+                                    alt=""
+                                    class="card-media__decor-bottom"
+                                />
                             </div>
-                            <img
-                                src="./assets/icons/card-decorate-01.svg"
-                                alt=""
-                                class="card-media__decor-top"
-                            />
-                            <img
-                                src="./assets/icons/card-decorate-02.svg"
-                                alt=""
-                                class="card-media__decor-circle"
-                            />
-                            <img
-                                src="./assets/icons/card-decorate-03.svg"
-                                alt=""
-                                class="card-media__decor-bottom"
-                            />
-                            <div class="card-media__top">
-                                <figure class="card-media__top--icon">
+                            <div class="card-media__tag-top">
+                                <figure class="card-media__tag-top--icon">
                                     <img
                                         src="./assets/icons/card-icon-paper-plane.svg"
                                         alt=""
                                     />
                                 </figure>
-                                <div class="card-media__top--content">
-                                    <p class="card-media__top--title">
+                                <div class="card-media__tag-top--content">
+                                    <p class="card-media__tag-top--title">
                                         Send Money
                                     </p>
-                                    <p class="card-media__top--price">- $600</p>
-                                    <p class="card-media__top--desc">
+                                    <p class="card-media__tag-top--price">
+                                        - $600
+                                    </p>
+                                    <p class="card-media__tag-top--desc">
                                         Airbnb Payment
                                     </p>
-                                    <p class="card-media__top--date">Sep 23</p>
+                                    <p class="card-media__tag-top--date">
+                                        Sep 23
+                                    </p>
                                 </div>
                             </div>
-                            <div class="card-media__bottom">
-                                <figure class="card-media__bottom--icon">
+                            <div class="card-media__tag-bottom">
+                                <figure class="card-media__tag-bottom--icon">
                                     <img
                                         src="./assets/icons/card-icon-income.svg"
                                         alt=""
                                     />
                                 </figure>
-                                <span class="card-media__bottom--text">
+                                <span class="card-media__tag-bottom--text">
                                     Income
                                 </span>
-                                <p class="card-media__bottom--price">- $600</p>
+                                <p class="card-media__tag-bottom--price">
+                                    - $600
+                                </p>
                             </div>
                         </div>
+                    </section>
+                    <section class="card__row">
+                        <div class="card-media card-media__bottom">
+                            <figure class="card-media__wrap--bottom">
+                                <img
+                                    src="./assets/img/card-media-bottom.png"
+                                    alt=""
+                                    class="card-media__bottom--img"
+                                />
+                            </figure>
+                            <div class="card-media__method">
+                                <p class="card-media__method--title">
+                                    Choose payment method:
+                                </p>
+                                <div class="card-media__method--list">
+                                    <div class="card-media__method--item">
+                                        <img
+                                            src="./assets/icons/master card.svg"
+                                            alt="master card"
+                                        />
+                                    </div>
+                                    <div class="card-media__method--item">
+                                        <img
+                                            src="./assets/icons/maestro.svg"
+                                            alt="v"
+                                        />
+                                    </div>
+                                    <div class="card-media__method--item">
+                                        <img
+                                            src="./assets/icons/bank.svg"
+                                            alt="bank"
+                                        />
+                                    </div>
+                                    <div class="card-media__method--item">
+                                        <img
+                                            src="./assets/icons/visa.svg"
+                                            alt="visa"
+                                        />
+                                    </div>
+                                    <div class="card-media__method--item">
+                                        <img
+                                            src="./assets/icons/paypal.svg"
+                                            alt="paypal"
+                                        />
+                                    </div>
+                                    <div class="card-media__method--item">
+                                        <img
+                                            src="./assets/icons/plus.svg"
+                                            alt="incom"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <figure class="card-media__decor-bottom__circle">
+                                <img
+                                    src="./assets/icons/card-circle-icon.svg"
+                                    alt=""
+                                />
+                            </figure>
+                        </div>
+                        <section class="card-content">
+                            <p class="section__title">Digital Smart Wallet</p>
+                            <h2 class="section__heading card-content__heading">
+                                Transfer and Deposite Your Money Anytime
+                            </h2>
+                            <p class="section__desc card-content__desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <ul class="card-content__list">
+                                <li class="card-content__item">
+                                    <p class="card-content__item--text">
+                                        Powerfull App
+                                    </p>
+                                </li>
+                                <li class="card-content__item">
+                                    <p class="card-content__item--text">
+                                        Transparency And Speed
+                                    </p>
+                                </li>
+                                <li class="card-content__item">
+                                    <p class="card-content__item--text">
+                                        Multiple Use Capabilities
+                                    </p>
+                                </li>
+                            </ul>
+                            <button class="btn">Get Started</button>
+                        </section>
                     </section>
                 </div>
             </section>

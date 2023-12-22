@@ -639,11 +639,23 @@ a {
     padding: 30px 0;
 }
 
-.card__inner {
-    display: grid;
-    grid-template-columns: auto auto;
+.card__row {
+    display: flex;
     align-items: center;
-    column-gap: 130px;
+    justify-content: space-between;
+}
+
+.card__row + .card__row {
+    margin-top: 160px;
+}
+
+.card-content:nth-child(4) {
+    margin-left: auto;
+}
+
+.card-content__heading,
+.card-content__desc {
+    width: 470px;
 }
 
 .card-content__list {
@@ -673,7 +685,12 @@ a {
     background-color: var(--primary-color);
 }
 
+/* Card media */
 .card-media {
+    position: relative;
+}
+
+.card-media__wrap {
     position: relative;
     z-index: 1;
     margin-right: 88px;
@@ -742,7 +759,7 @@ a {
     z-index: -1;
 }
 
-.card-media__top {
+.card-media__tag-top {
     font-family: "Inter", sans-serif;
     display: grid;
     grid-template-columns: 40px 1fr;
@@ -756,10 +773,11 @@ a {
     box-shadow: 0px 14px 38px 0px rgba(0, 0, 0, 0.07);
     position: absolute;
     top: -48px;
-    right: -88px;
+    right: 0;
+    z-index: 1;
 }
 
-.card-media__top--icon {
+.card-media__tag-top--icon {
     margin-right: 14px;
     display: flex;
     align-items: center;
@@ -770,13 +788,13 @@ a {
     border-radius: 8px;
 }
 
-.card-media__top--content {
+.card-media__tag-top--content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-between;
 }
 
-.card-media__top--title {
+.card-media__tag-top--title {
     color: #212832;
     font-family: inherit;
     font-size: 1.2rem;
@@ -784,7 +802,7 @@ a {
     line-height: normal;
 }
 
-.card-media__top--price {
+.card-media__tag-top--price {
     color: #212832;
     text-align: right;
     font-family: inherit;
@@ -793,7 +811,7 @@ a {
     line-height: normal;
 }
 
-.card-media__top--desc {
+.card-media__tag-top--desc {
     color: #696d76;
     font-family: inherit;
     font-size: 1rem;
@@ -801,7 +819,7 @@ a {
     line-height: normal;
 }
 
-.card-media__top--date {
+.card-media__tag-top--date {
     color: #696d76;
     text-align: right;
     font-family: inherit;
@@ -810,7 +828,7 @@ a {
     line-height: normal;
 }
 
-.card-media__bottom {
+.card-media__tag-bottom {
     padding: 15px;
     width: 120px;
     height: 120px;
@@ -818,10 +836,11 @@ a {
     background: #439f90;
     position: absolute;
     bottom: -55px;
-    right: -88px;
+    right: 0;
+    z-index: 1;
 }
 
-.card-media__bottom--icon {
+.card-media__tag-bottom--icon {
     width: 30px;
     height: 30px;
     border-radius: 8px;
@@ -831,7 +850,7 @@ a {
     justify-content: center;
 }
 
-.card-media__bottom--text {
+.card-media__tag-bottom--text {
     display: inline-block;
     margin-top: 14px;
     color: #fff;
@@ -840,10 +859,84 @@ a {
     line-height: normal;
 }
 
-.card-media__bottom--price {
+.card-media__tag-bottom--price {
     margin-top: 6px;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: normal;
+}
+
+/* Row 2 */
+.card-media__bottom {
+    width: 570px;
+}
+
+.card-media__wrap--bottom::after {
+    content: url(../img/card-media-bottom-bg.svg);
+    position: absolute;
+    left: 0;
+    bottom: -2.5px;
+}
+
+.card-media__bottom--img {
+    position: relative;
+    width: 413px;
+    margin-left: 30px;
+    z-index: 1;
+    display: block;
+}
+
+.card-media__method {
+    padding: 28px;
+    width: 281px;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 44px 48px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 57px;
+    right: 26px;
+    z-index: 1;
+}
+
+.card-media__method--title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.card-media__method--list {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.card-media__method--item {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #f2f2fa;
+}
+
+.card-media__method--item:nth-child(6) {
+    background: #f9ea63;
+}
+
+.card-media__decor-bottom__circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 288px;
+    right: 0;
+    z-index: 1;
 }
