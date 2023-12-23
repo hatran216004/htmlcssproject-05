@@ -1307,13 +1307,15 @@ a {
     line-height: 3rem;
 }
 
-.footer__link:hover {
+.footer__link:hover,
+.footer__address:hover {
     text-decoration: underline;
 }
 
 .footer__address {
     margin-bottom: 48px;
     width: 371px;
+    cursor: default;
 }
 
 .footer__letter {
