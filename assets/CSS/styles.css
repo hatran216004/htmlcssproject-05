@@ -132,7 +132,13 @@ a {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
-    line-height: 2.8rem; /* 175% */
+    line-height: 2.8rem;
+    transition: color 0.25s, text-shadow 0.25s;
+}
+
+.navbar__link:hover {
+    color: #212832;
+    text-shadow: 1px 0 0 currentColor;
 }
 
 .navbar-item:nth-child(1) .navbar__link {
@@ -143,7 +149,7 @@ a {
     color: #212832;
     font-size: 1.6rem;
     text-shadow: 1px 0 0 currentColor;
-    line-height: 2.8rem; /* 175% */
+    line-height: 2.8rem;
 }
 
 .navbar__link--active::after {
@@ -191,6 +197,7 @@ a {
 }
 
 .hero-content__heading {
+    user-select: none;
     color: #212832;
     font-size: 6rem;
     font-weight: 700;
@@ -1235,6 +1242,16 @@ a {
     position: absolute;
     left: 112px;
     top: 49px;
+    animation: fly 0.6s ease-in-out infinite alternate;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(-0.1em);
+    }
+    to {
+        transform: translateY(0.1em);
+    }
 }
 
 .apps__icon-star:nth-child(2) {
