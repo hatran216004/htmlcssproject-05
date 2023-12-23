@@ -1307,6 +1307,10 @@ a {
     line-height: 3rem;
 }
 
+.footer__link:hover {
+    text-decoration: underline;
+}
+
 .footer__address {
     margin-bottom: 48px;
     width: 371px;
